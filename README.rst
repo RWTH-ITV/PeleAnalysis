@@ -37,7 +37,7 @@ push the new branch to your fork)::
 
     git push -u origin AmazingNewFeature [Note: -u option required only for the first push of new branch]
 
-4.  Submit a merge request through the github project page - be sure you are requesting to merge your branch to the master branch.
+4.  Submit a merge request through the github project page - be sure you are requesting to merge your branch to the ``development`` branch of the ``ITV-RWTH/PeleAnalysis`` and not to the main repository ``AMReX-Combustion/PeleAnalysis``.
 
 
 
