@@ -225,9 +225,8 @@ main (int   argc,
     int nStreamPairs = locs.size();
     // Initialise particles
     Print() << "Initialising particles..." << std::endl;
-    for (int lev = 0; lev < Nlev; lev++) {
-      spc.InitParticles(locs,lev);
-    }
+    spc.InitParticles(locs,Nlev-1);
+    
     //Check if particles initialised fine
     if (spc.OK()) {
       Print() << "SPC is happy with initialisation :-)" << std::endl;
