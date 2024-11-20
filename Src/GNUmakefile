@@ -38,19 +38,15 @@ EBASE		= template
 #EBASE		= isosurface
 #EBASE		= decimateMEF
 #EBASE         = subPlt
+#EBASE         = partStream
 
-#BROKEN
-#EBASE         = avgToPlane
-
-#STREAM TOOLS - need combining/fixing/work
-#EBASE         = stream
+# tools that need review/combining/fixing/work
 #EBASE         = partStream
 #EBASE         = stream2plt
-#EBASE         = sampleStreamlines
 #EBASE         = streamScatter
 #EBASE         = streamSub
 #EBASE         = streamTubeStats
-
+#EBASE         = avgToPlane
 
 
 CEXE_sources += $(EBASE).cpp
