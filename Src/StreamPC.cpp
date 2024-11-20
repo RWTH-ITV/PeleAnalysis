@@ -31,14 +31,14 @@ StreamParticleContainer(int                                 a_nPtsOnStrm,
 
 void
 StreamParticleContainer::
-InitParticles (const Vector<Vector<Real>>& locs, const int lev)
+InitParticles (const Vector<Vector<Real>>& locs)
 {
   BL_PROFILE("StreamParticleContainer::InitParticles");
 
   const int nProc = ParallelDescriptor::NProcs();
   const int myProc = ParallelDescriptor::MyProc();
   int nLocs = locs.size();
-  auto& particle_tile = DefineAndReturnParticleTile(lev, myProc, 0);
+  auto& particle_tile = DefineAndReturnParticleTile(Nlev-1, myProc, 0);
   for (int n = 0; n < nLocs; n++) {
     //lets just initialise on a random processor and redistribute afterwards 
     //trying to find the right processor here doesn't work well with particles near boundaries

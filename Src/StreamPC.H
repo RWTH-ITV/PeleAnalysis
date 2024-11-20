@@ -31,7 +31,7 @@ public:
 			   const amrex::IntVect                            a_is_per,
 			   const amrex::Vector<std::string>                & a_outVarNames);
 
-  void InitParticles(const amrex::Vector<amrex::Vector<amrex::Real>>& a_locs, const int lev);
+  void InitParticles(const amrex::Vector<amrex::Vector<amrex::Real>>& a_locs);
 
   void SetParticleLocation(int a_streamPos);
 
